@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navLinks li a {
+    color: white;
+    text-decoration: none;
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.userImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}

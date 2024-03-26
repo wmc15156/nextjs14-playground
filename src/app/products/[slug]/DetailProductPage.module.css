@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.imageSlider {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.imageSlider img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.infoSection {
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.discount {
+    color: #f00;
+    margin-left: 10px;
+}
+
+.ratingStock {
+    margin-bottom: 20px;
+}
+
+.rating {
+    color: #ffc107;
+}
+
+.stock {
+    color: #28a745;
+}
+
+.brandCategory {
+    color: #007bff;
+}
