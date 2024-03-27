@@ -6,8 +6,7 @@ import { signIn } from 'next-auth/react';
 export default function Home() {
   return (
     <h1>
-      Home Page <Link href={'/products'}>productrs</Link>
-      <button onClick={() => signIn()}>로그인</button>
+      Home Page <Link href={'/products'}>Products</Link>
     </h1>
   );
 }

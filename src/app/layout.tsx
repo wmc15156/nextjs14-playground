@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import React from 'react';
-import AuthContext from '@/app/contexts/AuthContext';
+import AuthContext from '@/contexts/AuthContext';
 import Navbar from '@/components/Navbar';
+import ReactQueryProviders from '@/contexts/ReactQueryProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,8 +23,10 @@ export default function RootLayout({
     <html lang='en'>
       <AuthContext>
         <body className={inter.className}>
-          <Navbar />
-          {children}
+          <ReactQueryProviders>
+            <Navbar />
+            {children}
+          </ReactQueryProviders>
         </body>
       </AuthContext>
     </html>
