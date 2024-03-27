@@ -22,9 +22,9 @@ export const authOptions: NextAuthOptions = {
             // expiresInMins: 60, // optional
           }),
         });
-
+        console.log(authResponse.status, authResponse.statusText, 'status');
         if (!authResponse.ok) {
-          return null;
+          throw new Error(`status: ${authResponse.status}, statusText: ${authResponse.statusText}`);
         }
         const user = await authResponse.json();
         return {
